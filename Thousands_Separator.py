@@ -10,3 +10,7 @@ print( "{:,}".format(num), end="\n\n" )
 # Alternatively
 # print(f"{num:,}", end="\n\n")
 # can also be used
+
+
+# float precision till 53 bits
+# or about 17 digits of precision
