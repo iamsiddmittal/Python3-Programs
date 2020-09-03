@@ -12,5 +12,13 @@ print( "{:,}".format(num), end="\n\n" )
 # can also be used
 
 
-# float precision till 53 bits
-# or about 17 digits of precision
+# float precision in python till 53 bits
+# or about 16/17 digits of precision
+
+# This is because python uses double precision
+# floats
+
+# So float to int conversion in the program
+# will give the right/expected value till
+# 16/17 digits, after which it would not
+# give the correct/expected result
