@@ -1,15 +1,22 @@
-num = float(input("\nEnter a number: "))
+try:
+    num = float(input("\nEnter a number: "))
 
-if num % 1 == 0:
-    num = int(num)
+    if num % 1 == 0:
+        num = int(num)
 
-print("\nOutput = ",end="")
+    print("\nOutput = ",end="")
+    print( "{:,}".format(num), end="\n\n" )
 
-print( "{:,}".format(num), end="\n\n" )
+
+except ValueError:
+    print("Input not a number!")
+
+
 
 # Alternatively
 # print(f"{num:,}", end="\n\n")
-# can also be used
+# can also be used instead of
+# print( "{:,}".format(num), end="\n\n" )
 
 
 # float precision in python till 53 bits
