@@ -1,12 +1,16 @@
 from datetime import datetime
 from datetime import timedelta
 
-a = list(map(int, input("Enter Date (Year Month Day): ").split(" ")))
+operation = input("Enter the operation you want to perform (add)\n>>> ")
 
-a = datetime(a[0], a[1], a[2])
+if operation in ["add", "Add", "ADD"]:
+    add_to_date = list(map(int, input("Enter Date (Year Month Day): ").strip().split(" ")))
+    add_to_date = datetime(add_to_date[0], add_to_date[1], add_to_date[2])
 
-add = int(input("Enter Days To Add: "))
+    add = int(input("Enter Days To Add: "))
 
-result = a + timedelta(add)
+    result = add_to_date + timedelta(add)
+    print(result)
 
-print(result)
+else:
+    print("Not a valid operation code!!")
