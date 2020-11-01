@@ -1,7 +1,11 @@
 from datetime import datetime
 from datetime import timedelta
 
-operation = input("Enter the operation you want to perform (add)\n>>> ")
+
+# operation = input(f"Enter the operation you want to perform ({ops})\n>>> ")
+ops = "add / sub"
+op_prompt = "Enter the operation you want to perform (" + ops +")\n>>> "
+operation = input(op_prompt)
 
 
 if operation in ["add", "Add", "ADD"]:
